@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <header><h1>Age calculator app</h1></header>
+    <main>
+      <section class="age-calculator">
+        <form>
+          <label
+            >D A Y<br /><input
+              type="number"
+              id="day"
+              name="day"
+              placeholder="DD"
+              maxlength="2"
+            />
+            <br /><span class="error-info"></span>
+          </label>
+          <label
+            >M O N T H<br /><input
+              type="number"
+              id="month"
+              name="month"
+              placeholder="MM"
+              maxlength="2"
+            />
+            <br /><span class="error-info"></span>
+          </label>
+          <label
+            >Y E A R<br /><input
+              type="number"
+              id="year"
+              name="year"
+              placeholder="YYYY"
+              maxlength="4"
+            />
+            <br /><span class="error-info"></span>
+          </label>
+          <button type="button" class="submitForm-btn">
+            <img src="./assets/images/icon-arrow.svg" alt="submit button" />
+          </button>
+        </form>
+        <div class="age">
+          <span class="years"
+            ><span class="years-slot age-dash">- - </span>years</span
+          >
+          <span class="month"
+            ><span class="months-slot age-dash">- - </span>months</span
+          >
+          <span class="days"
+            ><span class="days-slot age-dash">- - </span>days</span
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >&period; Coded by
+        <a
+          href="https://twitter.com/Ebube_ofoefule2?t=OZThRkwgdieCvSOsHHxMGg&s=09"
+          >Ebubechukwu ofoefule</a
+        >&period;
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
